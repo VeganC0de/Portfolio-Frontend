@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0; 
+}
+
+h1{
+    
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-align: center;
+        margin-top: 150px;
+        font-size: 150px;
+        font-weight: 800;
+        color: transparent;
+        background-image: url( https://media.giphy.com/media/TM8Fu4TrgkNSmXh5cw/giphy-downsized-large.gif );
+        background-position: center;
+        -webkit-background-clip: text;
+
+}
+
+body{
+    background: #ae00ff;
+    background-image: url("../../../src/assets/skillsbanner.jpg");
+    background-attachment: fixed;
+    background-repeat: none;
+
+}
+
+.skills-logo{
+    width: height 20%;
+}
+
+.skills-container{
+    width: 380px;
+    background-image: url("../../../src/assets/skillsbanner.jpg");
+    background-attachment: fixed;
+    background-repeat: none;
+    margin: 150px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 2 20px 25px rgba(58,55,55,0.2);
+    
+}
+
+@keyframes load {
+    from{
+        width:0%;
+    }
+}
+
+@-webkit-keyframes load{
+    from{
+        width:0%;
+    }
+}
+
+@-moz-keyframes load{
+    from{
+        width:0%;
+    }
+}
+
+@-o-keyframes load{
+    from{
+        width:0%;
+    }
+}
+
+h1{
+    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 50px;
+    font-weight: 800;
+    color: transparent;
+    
+}
+.skills-box{
+    list-style: none;
+    margin: 0;
+    padding:0;
+}
+.skills-box li h5{
+    margin-bottom: 10px;
+}
+.bar{
+    height: 18px;
+    background: #eee;
+    margin-bottom: 15px;
+    border-radius: 15px;
+}
+
+.bar::before{
+    content:"";
+    background-image: url( https://media.giphy.com/media/TM8Fu4TrgkNSmXh5cw/giphy-downsized-large.gif );
+    background-position: center;
+    display: inline-block;
+    padding: 8px;
+    border-radius: inherit;
+    animation: load 3s 0s;
+    -webkit-animation: load 3s 0s;
+    -moz-animation: load 3s 0s;
+    -o-animation: load 3s 0s;
+}
+
+.bar.bar1::before{
+    width: calc(95% - 10px);
+}
+
+.bar.bar2::before{
+    width: calc(85% - 10px);
+}
+
+.bar.bar3::before{
+    width: calc(40% - 10px);
+}
+
+.bar.bar4::before{
+    width: calc(70% - 10px);
+}
+
+.bar.bar5::before{
+    width: calc(30% - 10px);
+}
+
+.bar.bar6::before{
+    width: calc(60% - 10px);
+}
+
+.bar.bar7::before{
+    width: calc(80% - 10px);
+}
