@@ -1,0 +1,167 @@
+body{
+    height: 3000px;
+    overflow-x: hidden;
+    
+}
+
+.parallax-container{
+        /*  this is where the magic happens:  */
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+        background-image: url(../../assets/banner.jpg);
+      
+        /* dimensions are important, ensure it is tall enough to scroll */ 
+        min-height: 100vh;
+      
+        /* you are free to lay out the container items with flexbox or whatever means you wish */
+        display: flex;
+        flex-direction: column;
+        
+      
+      }
+
+
+.bg-image{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: -1;
+    filter: brightness(0.6);
+}
+
+<!-- Text animations 
+
+.row{
+  
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.0),transparent),url(../../assets/banner.jpg);
+    background-size: cover;
+    margin: 0;
+    background-position: center;
+    padding: 0 8%;
+    
+    background-attachment: fixed;
+}
+    
+.text-box{
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    bottom: 8%;
+    padding: 20px;
+}
+
+.text-box p{
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.text-box span{
+    font-size: 40px;
+    font-weight: 500;
+    display: block;
+    white-space: nowrap;
+    border-right: 2px solid;
+    width: 20ch;
+
+    animation: typing 3s infinite steps(20), blink .5s infinite step-end alternate;
+    overflow:hidden;
+}
+
+@keyframes typing {
+
+from { width: 0}
+
+}
+
+@keyframes blink {
+ 50% { border-color: transparent}
+}
+
+
+.text-box h1{
+    font-size: 105px;
+    line-height: 160px;
+    margin-left: -10px;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    background: url(../../assets/textback.png);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+    }
+    
+    @keyframes back {
+        100%{
+            background-position: 1500px 0;
+        }
+    }
+
+
+    .glow-on-hover {
+        width: 110px;
+        height: 50px;
+        border: none;
+        outline: none;
+        color: #fff;
+        background: #111;
+        cursor: pointer;
+        position: relative;
+        z-index: 0;
+        border-radius: 10px;
+    }
+    
+    .glow-on-hover:before {
+        content: '';
+        background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+        position: absolute;
+        top: -2px;
+        left:-2px;
+        background-size: 400%;
+        z-index: -1;
+        filter: blur(5px);
+        width: calc(100% + 4px);
+        height: calc(100% + 4px);
+        animation: glowing 20s linear infinite;
+        opacity: 0;
+        transition: opacity .3s ease-in-out;
+        border-radius: 10px;
+    }
+
+    <!--Button efects 
+    
+    .glow-on-hover:active {
+        color: #000
+    }
+    
+    .glow-on-hover:active:after {
+        background: transparent;
+    }
+    
+    .glow-on-hover:hover:before {
+        opacity: 1;
+    }
+    
+    .glow-on-hover:after {
+        z-index: -1;
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #111;
+        left: 0;
+        top: 0;
+        border-radius: 10px;
+    }
+    
+    @keyframes glowing {
+        0% { background-position: 0 0; }
+        50% { background-position: 400% 0; }
+        100% { background-position: 0 0; }
+    }
