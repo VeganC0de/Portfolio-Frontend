@@ -9,7 +9,7 @@ body{
         background-attachment: fixed;
         background-position: center;
         background-size: cover;
-        background-image: url(../../assets/banner.jpg);
+        background-image: url(../../assets/12.jpg);
       
         /* dimensions are important, ensure it is tall enough to scroll */ 
         min-height: 100vh;
@@ -38,7 +38,7 @@ body{
 .row{
   
     height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.0),transparent),url(../../assets/banner.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.0),transparent),url(../../assets/12.jpg);
     background-size: cover;
     margin: 0;
     background-position: center;

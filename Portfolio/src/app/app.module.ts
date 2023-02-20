@@ -13,6 +13,7 @@ import { ContactMEComponent } from './contact-me/contact-me.component';
 import { FooterComponent } from './footer/footer.component';
 import { SocialComponent } from './social/social.component';
 import { LogoAPComponent } from './logo-ap/logo-ap.component';
+import { AboutmeComponent } from './aboutme/aboutme.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { LogoAPComponent } from './logo-ap/logo-ap.component';
     ContactMEComponent,
     FooterComponent,
     SocialComponent,
-    LogoAPComponent
+    LogoAPComponent,
+    AboutmeComponent
   ],
   imports: [
     BrowserModule,
