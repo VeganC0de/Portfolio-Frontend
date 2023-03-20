@@ -14,6 +14,9 @@ import { FooterComponent } from './footer/footer.component';
 import { SocialComponent } from './social/social.component';
 import { LogoAPComponent } from './logo-ap/logo-ap.component';
 import { AboutmeComponent } from './aboutme/aboutme.component';
+import { NgCircleProgressModule } from 'ng-circle-progress';
+import { EducationComponent } from './education/education.component';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -28,11 +31,14 @@ import { AboutmeComponent } from './aboutme/aboutme.component';
     FooterComponent,
     SocialComponent,
     LogoAPComponent,
-    AboutmeComponent
+    AboutmeComponent,
+    EducationComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgCircleProgressModule.forRoot({}),
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
